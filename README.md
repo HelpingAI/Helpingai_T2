@@ -5,13 +5,13 @@ A simple module/way to use Perplexity AI in Python.
 ## Get started:
 
 ```
-python -m pip install -U Helpingai_T3 #comming soon
+python -m pip install -U Helpingai_T2 
 ```
 
 ## Example:
 
 ```python
-from Helpingai_T3 import Perplexity
+from Helpingai_T2 import Perplexity
 
 prompt = input("👦: ")
 for a in Perplexity().generate_answer(prompt):
