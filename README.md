@@ -1,4 +1,4 @@
-# Helpingperplexityai
+#Helpingai_T2
 
 A simple module/way to use Perplexity AI in Python.
 
