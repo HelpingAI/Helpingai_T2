@@ -1,6 +1,3 @@
-[![PyPI](https://img.shields.io/pypi/v/Helpingai-T2/)](https://pypi.org/project/Helpingai-T2/)
-[![Downloads](https://static.pepy.tech/badge/Helpingai-T2/)]https://pypi.org/project/Helpingai-T2/i)
-[![Status](https://img.shields.io/pypi/status/Helpingai-T2/)]https://pypi.org/project/Helpingai-T2/)
 # Helpingai_T2
 
 Helpingai_T2 is a Python module that allows you to interact with the Perplexity AI. It's simple to use and can be easily integrated into your Python projects.
