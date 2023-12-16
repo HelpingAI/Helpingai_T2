@@ -17,4 +17,11 @@ prompt = input("👦: ")
 for a in Perplexity().generate_answer(prompt):
     print(f"🤖: {a['answer']}")
 ```
+```python
+from Helpingai_T2 import Perplexity
 
+while True:
+    prompt = input("👦: ")
+    for a in Perplexity().generate_answer(prompt):
+        print(f"🤖: {a['answer']}")
+```
