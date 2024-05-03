@@ -10,11 +10,14 @@ from requests import Session
 class Perplexity:
     def __init__(self):
         self.session = Session()
-        self.user_agent = {
-            "User-Agent": "Ask/2.4.1/224 (iOS; iPhone; Version 17.1) isiOSOnMac/false",
-            "X-Client-Name": "Perplexity-iOS",
+        self.request_headers = {
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+            "Referer" : "https://www.perplexity.ai/",
+            "Accept" : "*/*",
+            "Accept-Encoding": 	"gzip, deflate",
+            "Accept-Language" :"en-US,en;q=0.5",
         }
-        self.session.headers.update(self.user_agent)
+        self.session.headers.update(self.request_headers)
         self.t = format(getrandbits(32), "08x")
         self.sid = loads(
             self.session.get(
@@ -72,7 +75,7 @@ class Perplexity:
             cookies += f"{key}={value}; "
         return WebSocketApp(
             url=f"wss://www.perplexity.ai/socket.io/?EIO=4&transport=websocket&sid={self.sid}",
-            header=self.user_agent,
+            header=self.request_headers,
             cookie=cookies[:-2],
             on_open=on_open,
             on_message=on_message,
